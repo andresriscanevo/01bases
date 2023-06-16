@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:widgetsapp/config/router/approuter.dart';
 import 'package:widgetsapp/config/theme/apptheme.dart';
-import 'package:widgetsapp/presentation/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,9 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme(selectedColor: 1).getTheme(),
-        home: HomeScreen());
+    return MaterialApp.router(
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(selectedColor: 1).getTheme(),
+    );
   }
 }
