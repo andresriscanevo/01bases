@@ -12,7 +12,6 @@ class MenuItem {
     required this.link,
     required this.icon,
   });
-  
 }
 
 const appMenuItem = <MenuItem>[
@@ -27,5 +26,11 @@ const appMenuItem = <MenuItem>[
     subtitle: 'Contenedor estilizado',
     link: '/cards',
     icon: Icons.credit_card,
+  ),
+  MenuItem(
+    title: 'ProgressIndicators',
+    subtitle: 'Generales y Controlados',
+    link: '/progress',
+    icon: Icons.refresh_rounded,
   ),
 ];
