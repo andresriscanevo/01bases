@@ -19,17 +19,17 @@ class SnackBarScreen extends StatelessWidget {
       context: context,
       barrierDismissible: false,
       builder: (context) => AlertDialog(
-        title: Text('Estas Seguro!'),
+        title: const Text('Estas Seguro!'),
         content: const Text('ahora se cerrara'),
         actions: [
           TextButton.icon(
               onPressed: () => context.pop(),
-              icon: Icon(Icons.cancel_presentation),
-              label: Text('Cancelar')),
+              icon: const Icon(Icons.cancel_presentation),
+              label: const Text('Cancelar')),
           TextButton.icon(
               onPressed: () => context.pop(),
-              icon: Icon(Icons.approval),
-              label: Text('Aceptar')),
+              icon: const Icon(Icons.approval),
+              label: const Text('Aceptar')),
         ],
       ),
     );
