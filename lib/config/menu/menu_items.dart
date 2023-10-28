@@ -45,4 +45,10 @@ const appMenuItem = <MenuItem>[
     link: '/animatedcontainer',
     icon: Icons.animation_rounded,
   ),
+  MenuItem(
+    title: 'UiControls',
+    subtitle: 'Una serie de controles de flutter',
+    link: '/uicontrols',
+    icon: Icons.control_point_duplicate,
+  ),
 ];
